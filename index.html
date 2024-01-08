@@ -7,17 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
-  <body>
+  <body class="page">
     <header class="header-content">
       <img src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
       <a class="header-content__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main-content">
       <div id="add-item">
-        <label for="add-item__new-item">Add Item</label>
+        <h3>Add Item</h3>
+        <label for="add-item__new-item"></label>
         <div class="add-item__form">
+          <!-- <label for="add-item__new-item"></label> -->
           <input id="add-item__new-item" class="add-item__input" type="text">
-          <button>Add</button>
+          <button class="add-item__button">Add</button>
         </div>
       </div>
       <h3>Todo</h3>
@@ -25,7 +27,7 @@
         <li>
           <input type="checkbox">
           <label class="tasks__input">Pay Bills</label>
-          <input type="text" class="tasks__input">
+          <input type="text" class="tasks__input tasks__input_text">
           <button class="tasks__button_edit">Edit</button>
           <button class="tasks__button_delete">
             <img src="./remove.svg" alt="delete button">
@@ -34,7 +36,7 @@
         <li class="edit-mode">
           <input type="checkbox">
           <label class="tasks__input">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="tasks__input">
+          <input type="text" value="Go Shopping" class="tasks__input tasks__input_text">
           <button class="tasks__button_edit">Save</button>
           <button class="tasks__button_delete">
             <img src="./remove.svg" alt="delete button">
@@ -46,7 +48,7 @@
         <li>
           <input type="checkbox" checked>
           <label class="tasks__input">See the Doctor</label>
-          <input type="text" class="tasks__input">
+          <input type="text" class="tasks__input tasks__input_text">
           <button class="tasks__button_edit">Edit</button>
           <button class="tasks__button_delete">
             <img src="./remove.svg" alt="delete button">
